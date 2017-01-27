@@ -6,54 +6,68 @@
 
 Lemma hilbertS (A B C : Prop) :
   (A -> B -> C) -> (A -> B) -> A -> C.
+Proof.
 Abort.
-
 (* partie 2.1 *)
 
 Lemma exo1 (P Q : Prop) : P -> (Q -> P).
+Proof.
 Abort.
 
 Lemma exo2 (P Q : Prop) : P -> ( ~ P -> Q).
+Proof.
 Abort.
 
 Lemma exo3 (P Q R : Prop) : (P -> Q) -> ((Q -> R) -> (P -> R)).
+Proof.
 Abort.
 
 Lemma exo4 (P Q : Prop) : (P -> Q) -> ( ~ Q -> ~ P).
+Proof.
 Abort.
 
 Require Import Classical.
 
 Lemma bottom_c (A : Prop) : ((~A) -> False) -> A.
+Proof.
 Abort.
 
 Lemma exo5 (P Q : Prop) : ( ~ Q -> ~ P) -> (P -> Q).
+Proof.
 Abort.
 
 Lemma exo6 (P : Prop) : ~ ~ P -> P.
+Proof.
 Abort.
 
 Lemma exo7 (P : Prop) : P -> ~ ~ P.
+Proof.
 Abort.
 
 Lemma exo8 (P Q R : Prop) : (P -> (Q -> R)) -> (P /\ Q -> R).
+Proof.
 Abort.
 
 Lemma exo9 (P Q R : Prop) : (P /\ Q -> R) -> (P -> (Q -> R)).
+Proof.
 Abort.
 
 Lemma exo10 (P : Prop) : P /\ ~ P -> False.
+Proof.
 Abort.
 
 Lemma exo11 (P : Prop) : False -> P /\ ~ P.
+Proof.
 Abort.
 
 (* partie 2.2 *)
 
 Lemma exo12 (P Q : Prop) : P \/ Q <-> ~ ( ~ P /\ ~ Q).
+Proof.
 Abort.
 
 Lemma exo13 (P : Prop) : ~ P <-> (P -> False).
+Proof.
 Abort.
 
 Lemma exo14 (P Q : Prop) : (P <-> Q) <-> (P -> Q) /\ (Q -> P).
